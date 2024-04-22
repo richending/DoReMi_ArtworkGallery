@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Circle Layout with Navigation Buttons</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    background: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+  }
+  .navbar input,
+  .navbar button {
+    padding: 8px;
+    margin: 4px 0;
+  }
+  .navbar button {
+    cursor: pointer;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 40px); /* Adjusted for navbar height */
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 20px;
+  }
+  .button {
+    border: 1px solid #999;
+    padding: 8px;
+    margin: 8px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition: background-color 0.3s;
+  }
+  .button:hover {
+    background-color: #e7e7e7;
+  }
+</style>
+</head>
+<body>
+<div class="navbar">
+  <div>Artwork Gallery</div>
+  <div>
+    <input type="search" placeholder="Search">
+    <button onclick="location.href='index.html';">Home</button>
+  </div>
+</div>
+<div class="content">
+  <a href="coloring.html" class="button">Coloring</a>
+  <a href="drawing.html" class="button">Drawing</a>
+  <div class="circle">Do</div>
+  <a href="blocks.html" class="button">Blocks</a>
+  <a href="crafts.html" class="button">Crafts</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artwork Gallery</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  .gallery-container {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .search-bar {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+    border-radius: 4px;
+  }
+  .circle {
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .do { background-color: #9a9cff; }
+  .re { background-color: #80cc80; }
+  .mi { background-color: #ffd699; }
+  .slogan {
+    font-style: italic;
+    border: 1px dashed #000;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="gallery-container">
+  <h1>Artwork Gallery</h1>
+  <input type="text" class="search-bar" placeholder="Search">
+  <div>
+    <a href="do.html"><div class="circle do">Do</div></a>
+    <a href="re.html"><div class="circle re">Re</div></a>
+    <a href="mi.html"><div class="circle mi">Mi</div></a>
+  </div>
+  <div class="slogan">Coloring the feeling, drawing the thoughts, building the future.</div>
+</div>
+</body>
+</html>

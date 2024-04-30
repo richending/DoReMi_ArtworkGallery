@@ -169,3 +169,52 @@ img:hover {
     font-size: 16px;     /* Even smaller date font size */
   }
 }
+
+/*--------------------stylr for do_crafts.html----------------------*/
+.do-crafts {
+  background-color: #9a9cff; 
+  display: inline-block;
+  height: 30px;  
+  width: 50px;
+  border-radius: 10%;
+}
+.do-crafts:hover {
+  background-color: #9370db;
+  cursor: pointer;
+}
+
+.date-do-crafts {
+  font-size: 24px;       /* Larger text for the date */
+  font-weight: bold;
+  margin-bottom: 10px;   /* Space below the date */
+  text-align: left;
+}
+
+.crafts {
+  display: flex;         /* Enables flexbox */
+  flex-wrap: wrap;       /* Allows items to wrap onto the next line */
+  gap: 20px;             /* Sets the gap between images */
+  justify-content: flex-start; /* Aligns items to the start of the flex container */
+}
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) { /* For tablets */
+  img {
+    max-width: 100px;    /* Smaller images on tablets */
+  }
+  .date-do-crafts {
+    font-size: 18px;     /* Smaller font size for the date */
+  }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+  .crafts {
+    gap: 1%;             /* Smaller gap on mobile */
+  }
+  img {
+    max-width: 80px;     /* Even smaller images on mobile */
+  }
+  .date-do-crafts {
+    font-size: 16px;     /* Even smaller date font size */
+  }
+}
+

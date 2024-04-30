@@ -123,3 +123,49 @@ body, html {
   background-color: #9370db;
   cursor: pointer;
 }
+
+.date-do-coloring {
+  font-size: 24px;       /* Larger text for the date */
+  font-weight: bold;
+  margin-bottom: 10px;   /* Space below the date */
+  text-align: left;
+}
+
+.coloring {
+  display: flex;         /* Enables flexbox */
+  flex-wrap: wrap;       /* Allows items to wrap onto the next line */
+  gap: 20px;             /* Sets the gap between images */
+  justify-content: flex-start; /* Aligns items to the start of the flex container */
+}
+img {
+  width: 220px;          /* Sets a fixed width for all images */
+  height: auto;          /* Maintains the aspect ratio of the images */
+  padding: 15px 15px 15px 15px; /* Adds padding around the images */
+  transition: transform 0.5s ease; /* Smooth transition for transformation */
+}
+img:hover {
+  transform: scale(2.5); /* Enlarges the image by 250% on hover */
+  z-index: 2; /* Ensures the image pops out over others */
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) { /* For tablets */
+  img {
+    max-width: 100px;    /* Smaller images on tablets */
+  }
+  .date-do-coloring {
+    font-size: 18px;     /* Smaller font size for the date */
+  }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+  .coloring {
+    gap: 1%;             /* Smaller gap on mobile */
+  }
+  img {
+    max-width: 80px;     /* Even smaller images on mobile */
+  }
+  .date-do-coloring {
+    font-size: 16px;     /* Even smaller date font size */
+  }
+}

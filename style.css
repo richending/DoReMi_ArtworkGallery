@@ -72,12 +72,37 @@ body, html {
   width: 50px;
   border-radius: 10%;
 }
-.content {
+.content-do {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   height: calc(100% - 40px); /* Adjusted for navbar height */
+  position: relative; /* Positioning context for absolutely positioned elements */
+}
+.circle-do {
+  width: 100px; /* Set width */
+  height: 100px; /* Set height */
+  background-color: #f0f0f0; /* Background color for visibility */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure text stays on top */
+  z-index: 1;
+}
+.pop-up-image-do {
+  display: none;
+  position: absolute;
+  top: 0; /* Align top with circle-do */
+  left: 0; /* Align left with circle-do */
+  width: 100%; /* Same width as circle-do */
+  height: auto; /* Same height as circle-do */
+  z-index: 2; /* Under the text */
+  border-radius: 50%;
+}
+.circle-do:hover + .pop-up-image-do {
+  display: block;
 }
 .circle-do {
   background-color: #9a9cff;

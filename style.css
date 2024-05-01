@@ -5,7 +5,7 @@
   box-sizing: border-box; /* This ensures padding doesn't affect the total width/height of elements */
 }
 body, html {
-  background-image: url('images/sunset.jpg');
+  background-image: url('images/grass.jpg');
   background-size: cover;   /* Ensures the image covers the entire page without changing its aspect ratio */
   background-position: center;
   background-repeat: vertical;
@@ -58,11 +58,12 @@ body, html {
 .mi { background-color: #ffd699; }
 .slogan {
   font-style: italic;
+  font-size: large;
   border: none;
   display: inline-block;
   padding: 10px;
   margin-top: 20px;
-  color:#333;
+  color: #fff;
 }
 /*--------------------stylr for do, re, mi---------------------------*/
 .gallery-container-do, .gallery-container-re, .gallery-container-mi {
@@ -103,6 +104,9 @@ body, html {
   height: auto; /* Set height */
   border-radius: 50%; /* Make it circular */
   object-fit: contain;
+  border: #fff 2px solid;
+  padding: 5px 5px 5px 5px;
+  margin-right: 20px;
 }
 
 .buttons-container {
@@ -182,8 +186,10 @@ img {
   width: 220px;          /* Sets a fixed width for all images */
   height: auto;          /* Maintains the aspect ratio of the images */
   object-fit: contain;  /* Ensures the image has its original dimensions */
-  padding: 15px 15px 15px 15px; /* Adds padding around the images */
+  margin: 10px 10px 10px 10px; /* Adds padding around the images */
   transition: transform 0.5s ease; /* Smooth transition for transformation */
+  border: #fff 1px solid;
+  padding: 10px 10px 10px 10px;
 }
 img:hover {
   transform: scale(3.0); /* Enlarges the image by 300% on hover */

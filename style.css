@@ -28,6 +28,9 @@ body, html {
   width: 300px;
   border-radius: 4px;
 }
+.AG {
+  margin-bottom: 20px;
+}
 .circle {
   display: inline-block;
   margin: 10px;
@@ -59,7 +62,7 @@ body, html {
 .AG-do, .AG-re, .AG-mi {
   margin-bottom: 20px;
 }
-.search-bar-do, .search-bar-re, .search-bar-mi {
+.search-bar-gallery {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -71,6 +74,7 @@ body, html {
   height: 30px;  
   width: 50px;
   border-radius: 10%;
+  margin-top: 50px;
 }
 .content-do, .content-re, .content-mi {
   display: flex;

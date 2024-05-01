@@ -5,6 +5,10 @@
   box-sizing: border-box; /* This ensures padding doesn't affect the total width/height of elements */
 }
 body, html {
+  background-image: url('images/sunset.jpg');
+  background-size: cover;   /* Ensures the image covers the entire page without changing its aspect ratio */
+  background-position: center;
+  background-repeat: vertical;
   width: 100%;
   height: 100%;
   font-family: Arial, sans-serif;
@@ -28,8 +32,14 @@ body, html {
   width: 300px;
   border-radius: 4px;
 }
-.AG {
-  margin-bottom: 20px;
+#dynamicText {
+  font-family: 'Brush Script', cursive;
+  font-style: italic;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 50px;
 }
 .circle {
   display: inline-block;
@@ -52,14 +62,17 @@ body, html {
   display: inline-block;
   padding: 10px;
   margin-top: 20px;
+  color:#333;
 }
-/*--------------------stylr for do.html---------------------------*/
+/*--------------------stylr for do, re, mi---------------------------*/
 .gallery-container-do, .gallery-container-re, .gallery-container-mi {
   text-align: center;
   max-width: 1000px;
   margin: auto;
 }
-.AG-do, .AG-re, .AG-mi {
+.AG, .AG-do, .AG-re, .AG-mi {
+  font-family: 'Brush Script', cursive;
+  font-style: italic;
   margin-bottom: 20px;
 }
 .search-bar-gallery {
@@ -112,7 +125,7 @@ body, html {
   background-color: #e7e7e7;
   cursor: pointer;
 }
-/*--------------------stylr for do, re, mi----------------------*/
+/*--------------------stylr for coloring, drawing, blocks, crafts----------------------*/
 .do-gallery{
   background-color: #9a9cff; 
   display: inline-block;
@@ -155,6 +168,7 @@ body, html {
   margin-top: 50px;     /* Space above the date */
   margin-bottom: 10px;   /* Space below the date */
   text-align: left;
+  color:#f4f4f4;
 }
 
 .gallery {

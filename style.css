@@ -51,15 +51,15 @@ body, html {
   margin-top: 20px;
 }
 /*--------------------stylr for do.html---------------------------*/
-.gallery-container-do {
+.gallery-container-do, .gallery-container-re, .gallery-container-mi {
   text-align: center;
   max-width: 1000px;
   margin: auto;
 }
-.AG-do {
+.AG-do, .AG-re, .AG-mi {
   margin-bottom: 20px;
 }
-.search-bar-do {
+.search-bar-do, .search-bar-re, .search-bar-mi {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -72,7 +72,7 @@ body, html {
   width: 50px;
   border-radius: 10%;
 }
-.content-do {
+.content-do, .content-re, .content-mi {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -80,42 +80,14 @@ body, html {
   height: calc(100% - 40px); /* Adjusted for navbar height */
   position: relative; /* Positioning context for absolutely positioned elements */
 }
-.circle-do {
-  width: 100px; /* Set width */
-  height: 100px; /* Set height */
-  background-color: #f0f0f0; /* Background color for visibility */
+
+.image-do, .image-re, .image-mi {
+  width: 200px; /* Set width */
+  height: auto; /* Set height */
   border-radius: 50%; /* Make it circular */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* Ensure text stays on top */
-  z-index: 1;
+  object-fit: contain;
 }
-.pop-up-image-do {
-  display: none;
-  position: absolute;
-  top: 0; /* Align top with circle-do */
-  left: 0; /* Align left with circle-do */
-  width: 100%; /* Same width as circle-do */
-  height: auto; /* Same height as circle-do */
-  z-index: 2; /* Under the text */
-  border-radius: 50%;
-}
-.circle-do:hover + .pop-up-image-do {
-  display: block;
-}
-.circle-do {
-  background-color: #9a9cff;
-  color: white;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  margin: 20px;
-}
+
 .buttons-container {
   display: flex; /* This will lay out the children elements in a row */
   justify-content: space-around; /* This will space them evenly in the container */
@@ -136,40 +108,67 @@ body, html {
   background-color: #e7e7e7;
   cursor: pointer;
 }
-/*--------------------stylr for do_coloring.html----------------------*/
-.do-coloring {
+/*--------------------stylr for do, re, mi----------------------*/
+.do-gallery{
   background-color: #9a9cff; 
   display: inline-block;
   height: 30px;  
   width: 50px;
   border-radius: 10%;
 }
-.do-coloring:hover {
+.do-gallery:hover {
   background-color: #9370db;
   cursor: pointer;
 }
 
-.date-do-coloring {
+.re-gallery{
+  background-color: #80cc80; 
+  display: inline-block;
+  height: 30px;  
+  width: 50px;
+  border-radius: 10%;
+}
+.re-gallery:hover {
+  background-color: #6b8e23;
+  cursor: pointer;
+}
+
+.mi-gallery{
+  background-color: #ffd699; 
+  display: inline-block;
+  height: 30px;  
+  width: 50px;
+  border-radius: 10%;
+}
+.mi-gallery:hover {
+  background-color: #ffcc66;
+  cursor: pointer;
+}
+
+.date-gallery {
   font-size: 24px;       /* Larger text for the date */
   font-weight: bold;
+  margin-top: 50px;     /* Space above the date */
   margin-bottom: 10px;   /* Space below the date */
   text-align: left;
 }
 
-.coloring {
+.gallery {
   display: flex;         /* Enables flexbox */
   flex-wrap: wrap;       /* Allows items to wrap onto the next line */
   gap: 20px;             /* Sets the gap between images */
   justify-content: flex-start; /* Aligns items to the start of the flex container */
 }
+
 img {
   width: 220px;          /* Sets a fixed width for all images */
   height: auto;          /* Maintains the aspect ratio of the images */
+  object-fit: contain;  /* Ensures the image has its original dimensions */
   padding: 15px 15px 15px 15px; /* Adds padding around the images */
   transition: transform 0.5s ease; /* Smooth transition for transformation */
 }
 img:hover {
-  transform: scale(2.5); /* Enlarges the image by 250% on hover */
+  transform: scale(3.0); /* Enlarges the image by 300% on hover */
   z-index: 2; /* Ensures the image pops out over others */
 }
 
@@ -178,68 +177,18 @@ img:hover {
   img {
     max-width: 100px;    /* Smaller images on tablets */
   }
-  .date-do-coloring {
+  .date-gallery {
     font-size: 18px;     /* Smaller font size for the date */
   }
 }
-
 @media (max-width: 480px) { /* For mobile phones */
-  .coloring {
+  .gallery {
     gap: 1%;             /* Smaller gap on mobile */
   }
   img {
     max-width: 80px;     /* Even smaller images on mobile */
   }
-  .date-do-coloring {
+  .date-gallery {
     font-size: 16px;     /* Even smaller date font size */
   }
 }
-
-/*--------------------stylr for do_crafts.html----------------------*/
-.do-crafts {
-  background-color: #9a9cff; 
-  display: inline-block;
-  height: 30px;  
-  width: 50px;
-  border-radius: 10%;
-}
-.do-crafts:hover {
-  background-color: #9370db;
-  cursor: pointer;
-}
-
-.date-do-crafts {
-  font-size: 24px;       /* Larger text for the date */
-  font-weight: bold;
-  margin-bottom: 10px;   /* Space below the date */
-  text-align: left;
-}
-
-.crafts {
-  display: flex;         /* Enables flexbox */
-  flex-wrap: wrap;       /* Allows items to wrap onto the next line */
-  gap: 20px;             /* Sets the gap between images */
-  justify-content: flex-start; /* Aligns items to the start of the flex container */
-}
-/* Media Queries for different screen sizes */
-@media (max-width: 768px) { /* For tablets */
-  img {
-    max-width: 100px;    /* Smaller images on tablets */
-  }
-  .date-do-crafts {
-    font-size: 18px;     /* Smaller font size for the date */
-  }
-}
-
-@media (max-width: 480px) { /* For mobile phones */
-  .crafts {
-    gap: 1%;             /* Smaller gap on mobile */
-  }
-  img {
-    max-width: 80px;     /* Even smaller images on mobile */
-  }
-  .date-do-crafts {
-    font-size: 16px;     /* Even smaller date font size */
-  }
-}
-

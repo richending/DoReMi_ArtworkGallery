@@ -61,10 +61,14 @@ body, html {
   font-style: italic;
   font-size: large;
   border: none;
-  display: inline-block;
   padding: 10px;
   margin-top: 20px;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  border-radius: 10px;
+}
+.slogan p {
+  line-height: 1.5;
 }
 
 /* Media Queries for different screen sizes */
@@ -176,15 +180,15 @@ body, html {
 
 /* Media Queries for different screen sizes */
 @media (max-width: 768px) {
-  .AG-do {
+  .AG-do, .AG-re, .AG-mi {
       font-size: 20px; /* Smaller font size for smaller devices */
   }
 
-  .content-do {
+  .content-do, .content-re, .content-mi {
       flex-direction: column; /* Stack elements vertically on smaller screens */
   }
 
-  .image-do {
+  .image-do, .image-re, .image-mi {
       width: 150px; /* Smaller images for smaller screens */
       margin-right: 0; /* Remove margin to center align the image */
       margin-bottom: 20px; /* Add space below for clarity */
@@ -205,11 +209,11 @@ body, html {
       padding: 0 10px; /* Add padding to avoid touching the screen edges */
   }
 
-  .AG-do {
+  .AG-do, .AG-re, .AG-mi {
       font-size: 16px; /* Even smaller font size for very small devices */
   }
 
-  .image-do {
+  .image-do, .image-re, .image-mi {
       width: 120px; /* Even smaller image for very small devices */
   }
 
@@ -302,11 +306,14 @@ img:hover {
 @media (max-width: 480px) { /* For mobile phones */
   .gallery {
     gap: 1%;             /* Smaller gap on mobile */
+    margin-left: 20%;
+    margin-right: 20%;
   }
   img {
     max-width: 80px;     /* Even smaller images on mobile */
   }
   .date-gallery {
     font-size: 16px;     /* Even smaller date font size */
+    margin-left: 20%;
   }
 }

@@ -12,6 +12,7 @@ body, html {
   width: 100%;
   height: 100%;
   font-family: Arial, sans-serif;
+  font-size: 16px;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
@@ -65,6 +66,49 @@ body, html {
   margin-top: 20px;
   color: #fff;
 }
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+  body, html {
+    font-size: 14px; /* Smaller font size for tablets and mobile devices */
+  }
+  #dynamicText {
+    font-size: 24px; /* Smaller font size for smaller screens */
+    margin-top: 10%; /* Less margin on smaller screens */
+    margin-bottom: 30px;
+  }
+  .circle {
+    width: 80px; /* Smaller circles on smaller screens */
+    height: 80px;
+    line-height: 80px;
+  }
+  .slogan {
+    font-size: medium; /* Smaller text for slogan */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    padding: 0 10px; /* Padding to prevent content from touching the edges */
+  }
+  .circle {
+    width: 60px; /* Even smaller circles for very small screens */
+    height: 60px;
+    line-height: 60px;
+    margin: 5px; /* Reduced margin */
+  }
+  .slogan {
+    font-size: small; /* Smaller font size for very small devices */
+  }
+}
+
+/* Enhancements for flexible layouts */
+.gallery-container > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows circles to wrap on small screens */
+}
+
 /*--------------------stylr for do, re, mi---------------------------*/
 .gallery-container-do, .gallery-container-re, .gallery-container-mi {
   text-align: center;
@@ -129,6 +173,56 @@ body, html {
   background-color: #e7e7e7;
   cursor: pointer;
 }
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+  .AG-do {
+      font-size: 20px; /* Smaller font size for smaller devices */
+  }
+
+  .content-do {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .image-do {
+      width: 150px; /* Smaller images for smaller screens */
+      margin-right: 0; /* Remove margin to center align the image */
+      margin-bottom: 20px; /* Add space below for clarity */
+  }
+
+  .button {
+      padding: 6px; /* Slightly smaller padding */
+      font-size: 14px; /* Smaller font size for buttons */
+  }
+
+  .home {
+      width: 100px; /* Slightly larger home button for easier touch */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container-do {
+      padding: 0 10px; /* Add padding to avoid touching the screen edges */
+  }
+
+  .AG-do {
+      font-size: 16px; /* Even smaller font size for very small devices */
+  }
+
+  .image-do {
+      width: 120px; /* Even smaller image for very small devices */
+  }
+
+  .button {
+      padding: 5px; /* Reduce padding even more */
+      font-size: 12px; /* Reduce button text size */
+  }
+
+  .home {
+      width: 80px; /* Adjust home button size */
+  }
+}
+
 /*--------------------stylr for coloring, drawing, blocks, crafts----------------------*/
 .do-gallery{
   background-color: #9a9cff; 

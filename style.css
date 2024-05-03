@@ -291,14 +291,14 @@ img {
 }
 /* CSS for the 'enlarged' class */
 .enlarged {
-  transform: scale(3.0); /* Enlarge the image */
+  transform: scale(4.0); /* Enlarge the image */
   z-index: 2; /* Bring the image to the foreground */
 }
 
 /* Media Queries for different screen sizes */
 @media (min-width: 769px) {
   img:hover {
-    transform: scale(3.0); /* Enlarges the image by 300% on hover */
+    transform: scale(2.0); /* Enlarges the image by 200% on hover */
     z-index: 2; /* Ensures the image pops out over others */
   }
 }

@@ -104,13 +104,11 @@ body, html {
   .slogan {
     font-size: small; /* Smaller font size for very small devices */
   }
-}
-
-/* Enhancements for flexible layouts */
-.gallery-container > div {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allows circles to wrap on small screens */
+  .gallery-container > div {  /* Enhancements for flexible layouts */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows circles to wrap on small screens */
+  }
 }
 
 /*--------------------stylr for do, re, mi---------------------------*/
@@ -122,6 +120,7 @@ body, html {
 .AG, .AG-do, .AG-re, .AG-mi {
   font-family: 'Brush Script', cursive;
   font-style: italic;
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 .search-bar-gallery {
@@ -147,7 +146,7 @@ body, html {
   position: relative; /* Positioning context for absolutely positioned elements */
 }
 
-.image-do, .image-re, .image-mi {
+.image-DoReMi {
   width: 200px; /* Set width */
   height: auto; /* Set height */
   border-radius: 50%; /* Make it circular */
@@ -188,7 +187,7 @@ body, html {
       flex-direction: column; /* Stack elements vertically on smaller screens */
   }
 
-  .image-do, .image-re, .image-mi {
+  .image-DoReMi {
       width: 150px; /* Smaller images for smaller screens */
       margin-right: 0; /* Remove margin to center align the image */
       margin-bottom: 20px; /* Add space below for clarity */
@@ -213,7 +212,7 @@ body, html {
       font-size: 16px; /* Even smaller font size for very small devices */
   }
 
-  .image-do, .image-re, .image-mi {
+  .image-DoReMi {
       width: 120px; /* Even smaller image for very small devices */
   }
 
@@ -311,6 +310,7 @@ img {
     font-size: 18px;     /* Smaller font size for the date */
   }
 }
+
 @media (max-width: 480px) { /* For mobile phones */
   .gallery {
     gap: 1%;             /* Smaller gap on mobile */

@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var images = document.querySelectorAll('img');
 
   // Check screen size and apply click event for small screens
-  if (window.matchMedia("(max-width: 768px)").matches) {
+  if (window.matchMedia("(max-width: 768px)").matches || window.matchMedia("(max-height: 480px)").matches) {
     images.forEach(function(image) {
       image.addEventListener('click', function() {
         this.classList.toggle('enlarged');

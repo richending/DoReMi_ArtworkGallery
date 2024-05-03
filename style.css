@@ -157,7 +157,7 @@ body, html {
   margin-right: 20px;
 }
 
-.buttons-container {
+.button-container {
   display: flex; /* This will lay out the children elements in a row */
   justify-content: space-around; /* This will space them evenly in the container */
   align-items: center; /* This will center them vertically */
@@ -289,12 +289,15 @@ img {
   border: #fff 1px solid;
   padding: 10px 10px 10px 10px;
 }
-img:hover {
-  transform: scale(3.0); /* Enlarges the image by 300% on hover */
-  z-index: 2; /* Ensures the image pops out over others */
-}
 
 /* Media Queries for different screen sizes */
+@media (min-width: 769px) {
+  img:hover {
+    transform: scale(3.0); /* Enlarges the image by 300% on hover */
+    z-index: 2; /* Ensures the image pops out over others */
+  }
+}
+
 @media (max-width: 768px) { /* For tablets */
   img {
     max-width: 100px;    /* Smaller images on tablets */

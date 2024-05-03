@@ -27,3 +27,16 @@ document.addEventListener("DOMContentLoaded", function() {
 // start dynamic typing when page is fully loaded
 window.onload = typeText;
 
+/* image click to enlarge function on small screen */
+document.addEventListener("DOMContentLoaded", function() {
+  var images = document.querySelectorAll('img');
+
+  // Check screen size and apply click event for small screens
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    images.forEach(function(image) {
+      image.addEventListener('click', function() {
+        this.classList.toggle('enlarged');
+      });
+    });
+  }
+});

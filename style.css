@@ -291,7 +291,7 @@ img {
 }
 /* CSS for the 'enlarged' class */
 .enlarged {
-  transform: scale(1.5); /* Enlarge the image */
+  transform: scale(3.0); /* Enlarge the image */
   z-index: 2; /* Bring the image to the foreground */
 }
 

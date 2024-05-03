@@ -277,6 +277,7 @@ body, html {
   flex-wrap: wrap;       /* Allows items to wrap onto the next line */
   gap: 20px;             /* Sets the gap between images */
   justify-content: flex-start; /* Aligns items to the start of the flex container */
+  margin-bottom: 50px;
 }
 
 img {
